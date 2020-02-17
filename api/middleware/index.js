@@ -1,0 +1,9 @@
+const morgan = require('morgan')
+const cors = require('cors')
+const helmet = require('hemlet')
+
+module.exports = server => {
+  server.use(helmet())
+  server.use(morgan())
+  server.use(cors())
+}
