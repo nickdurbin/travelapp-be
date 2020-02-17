@@ -1,6 +1,6 @@
 const morgan = require('morgan')
 const cors = require('cors')
-const helmet = require('hemlet')
+const helmet = require('helmet')
 
 module.exports = server => {
   server.use(helmet())
